@@ -1,17 +1,26 @@
 library(data.table);
 library(ggplot2);
 
-peaks.shared <- fread("shared.custom.genomeOntology.txt");
-peaks.48hr.diff <- fread("48hr.custom.genomeOntology.txt");
-peaks.0hr.diff <- fread("0hr.custom.genomeOntology.txt");
-peaks.48hr.all <- fread("48hr.all.custom.genomeOntology.txt");
-peaks.0hr.all <- fread("0hr.all.custom.genomeOntology.txt");
-peaks.shared.down <- fread("shared.down.custom.genomeOntology.txt");
-peaks.48hr.down.diff <- fread("48hr.down.custom.genomeOntology.txt");
-peaks.0hr.down.diff <- fread("0hr.down.custom.genomeOntology.txt");
+# peaks.shared <- fread("shared.custom.genomeOntology.txt");
+# peaks.48hr.diff <- fread("48hr.custom.genomeOntology.txt");
+# peaks.0hr.diff <- fread("0hr.custom.genomeOntology.txt");
+# peaks.48hr.all <- fread("48hr.all.custom.genomeOntology.txt");
+# peaks.0hr.all <- fread("0hr.all.custom.genomeOntology.txt");
+# peaks.shared.down <- fread("shared.down.custom.genomeOntology.txt");
+# peaks.48hr.down.diff <- fread("48hr.down.custom.genomeOntology.txt");
+# peaks.0hr.down.diff <- fread("0hr.down.custom.genomeOntology.txt");
+
+##peaks.shared <- fread("shared.custom.genomeOntology.v2.txt");
+peaks.48hr.diff <- fread("48hr.custom.genomeOntology.v2.txt");
+peaks.0hr.diff <- fread("0hr.custom.genomeOntology.v2.txt");
+##peaks.48hr.all <- fread("48hr.all.custom.genomeOntology.v2.txt");
+##peaks.0hr.all <- fread("0hr.all.custom.genomeOntology.v2.txt");
+peaks.shared.down <- fread("shared.down.custom.genomeOntology.v2.txt");
+peaks.48hr.down.diff <- fread("48hr.down.custom.genomeOntology.v2.txt");
+peaks.0hr.down.diff <- fread("0hr.down.custom.genomeOntology.v2.txt");
 
 
-peaks.shared <- peaks.shared[order(peaks.shared[,1,with=F]),];
+##peaks.shared <- peaks.shared[order(peaks.shared[,1,with=F]),];
 peaks.48hr.diff <- peaks.48hr.diff[order(peaks.48hr.diff[,1,with=F]),];
 peaks.0hr.diff <- peaks.0hr.diff[order(peaks.0hr.diff[,1,with=F]),];
 peaks.shared.down <- peaks.shared.down[order(peaks.shared.down[,1,with=F]),];
@@ -54,7 +63,7 @@ ggsave(ggplot, file="all.pdf",width=7,height=7)
 
 
 
-peaks.down.df <- rbind( 
+peaks.down.df <- rbind(
                   data.frame(name=names, overlaps=peaks.48hr.down.diff[,6,with=F], proportion=peaks.48hr.down.diff[,6,with=F]/24665, log.enrichment=peaks.48hr.down.diff[,9,with=F], neg.log.p=abs(peaks.48hr.down.diff[,10,with=F]), condition="48hr.down"),
                   data.frame(name=names, overlaps=peaks.0hr.down.diff[,6,with=F], proportion=peaks.0hr.down.diff[,6,with=F]/17313,log.enrichment=peaks.0hr.down.diff[,9,with=F], neg.log.p=abs(peaks.0hr.down.diff[,10,with=F]), condition="0hr.down"),
                   data.frame(name=names, overlaps=peaks.shared.down[,6,with=F], proportion=peaks.shared.down[,6,with=F]/21780,log.enrichment=peaks.shared.down[,9,with=F], neg.log.p=abs(peaks.shared.down[,10,with=F]), condition="shared.down"))
@@ -65,4 +74,3 @@ colnames(peaks.down.df) <- c("names","overlaps","proportion","log.enrichment","n
 
 ggplot <- ggplot(aes(proportion, exp(log.enrichment),label=names),data=peaks.down.df)+geom_point(aes(size=neg.log.p))+theme_bw()+geom_text(nudge_y=.25)+facet_wrap(~condition);
 ggsave(ggplot, file="down.pdf",width=7,height=7)
-

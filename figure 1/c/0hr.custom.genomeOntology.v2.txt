@@ -1,0 +1,21 @@
+Name	PeakFile/Annotation	#features[ref=8298]	Coverage(bp)[ref=6544374]	AvgFeatureSize[ref=788]	Overlap(#peaks)	Overlap(bp)	Expected Overlap(bp, gsize=2.00e+09)	Log Ratio Enrichment	Log P-value(+ underrepresented)	P-value
+enhancers.Th.stim.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.Th.stim.txt	67152	69450748	1034	2424	1367609	227255	1.79	-1822.70	0.00e+00
+enhancers.Th17.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.Th17.txt	33682	35425943	1051	1574	1013654	115920	2.17	-1751.99	0.00e+00
+enhancers.Treg.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.Treg.txt	33320	35145230	1054	1341	757268	115001	1.88	-1050.15	0.00e+00
+enhancers.Th0.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.Th0.txt	62122	65374328	1052	1631	847591	213917	1.38	-725.65	7.16e-316
+enhancers.T.naive.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.T.naive.txt	18240	19135535	1049	891	445965	62615	1.96	-646.23	2.21e-281
+enhancers.CD34.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.CD34.txt	37753	39580272	1048	581	293409	129514	0.82	-102.64	2.67e-45
+enhancers.promoter-TSS.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.promoter-TSS.txt	11376	9428190	828	158	78660	30850	0.94	-35.09	5.78e-16
+enhancers.5prime.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.5prime.txt	6256	644981	103	64	8862	2110	1.44	-9.14	1.07e-04
+enhancers.Th1.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.Th1.txt	32740	34772185	1062	318	138510	113781	0.20	-4.98	6.84e-03
+enhancers.Other.T.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.Other.T.txt	18502	19984323	1080	198	83374	65392	0.24	-4.54	1.06e-02
+enhancers.Intergenic.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.Intergenic.txt	92465	74871258640	8097251.0	243	79440	244992759	-8.03	-0.00	1.00e+00
+enhancers.other.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.other.txt	319878	335326322	1048	1790	1063346	1097250	-0.03	2.27	1.03e-01
+enhancers.Th2.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.Th2.txt	29372	31200703	1062	229	85760	102094	-0.17	3.56	2.83e-02
+enhancers.Tmem.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.Tmem.txt	23855	25441945	1066	138	66707	83250	-0.22	4.10	1.65e-02
+enhancers.non-coding.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.non-coding.txt	15294	6036389	394	15	2116	19752	-2.23	19.30	4.14e-09
+enhancers.B.cell.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.B.cell.txt	57721	61293029	1061	292	125236	200562	-0.47	24.33	2.71e-11
+enhancers.exon.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.exon.txt	106140	17705341	166	74	8297	57935	-1.94	45.84	1.24e-20
+enhancers.3prime.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.3prime.txt	12561	12723571	1012	6	1480	41633	-3.34	49.09	4.78e-22
+enhancers.TTS.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.TTS.txt	19412	17606597	906	16	3366	57612	-2.84	59.46	1.50e-26
+enhancers.intron.txt	/ye/netapp/jimmie.ye/tools/Homer/.//data/genomes/hg19//annotations/tcells/enhancers.intron.txt	214372	789290513	3681	268	81653	2582706	-3.45	3669.71	0.00e+00
